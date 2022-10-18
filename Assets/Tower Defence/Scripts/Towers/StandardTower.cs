@@ -21,7 +21,7 @@ namespace Tower_Defence.Scripts.Towers
 
       protected void Awake()
       {
-         // just in-case the radius isn't set correctly
+         // just in-case the collider size isn't set correctly
          rangeCollider.size = new Vector3(towerRange, 0, towerRange);
       }
 
