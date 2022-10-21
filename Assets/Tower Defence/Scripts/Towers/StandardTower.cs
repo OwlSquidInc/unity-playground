@@ -1,23 +1,32 @@
 using System;
 using System.Collections.Generic;
+using Tower_Defence.Scripts.Enums;
 using UnityEngine;
 
 namespace Tower_Defence.Scripts.Towers
 {
    public class StandardTower : MonoBehaviour
    {
+      //============================================================
+      // Inspector Variables:
+      //============================================================
+
       [SerializeField] private Transform   modelTransform;
       [SerializeField] private BoxCollider rangeCollider;
 
-      [Header("Debug")]
+      [Space(10)]
 
-      [SerializeField] private int towerRange;
+      [SerializeField] private int                 towerRange;
       [SerializeField] private TargetSelectionMode targetSelectionMode;
 
-      [Space(10)]
+      [Header("Debug")]
 
       [SerializeField] private GameObject       target;
       [SerializeField] private List<GameObject> targetsInRange = new List<GameObject>();
+
+      //============================================================
+      // Unity Lifecycle:
+      //============================================================
 
       protected void Awake()
       {
@@ -44,6 +53,8 @@ namespace Tower_Defence.Scripts.Towers
 
 #if UNITY_EDITOR
          Debug.DrawLine(modelTransform.position, target.transform.position, Color.cyan);
+         if (Input.GetKeyDown(KeyCode.UpArrow)) { SetTargetSelectionMode(TargetSelectionMode.First); }
+         if (Input.GetKeyDown(KeyCode.DownArrow)) { SetTargetSelectionMode(TargetSelectionMode.Last); }
 #endif
       }
 
@@ -59,6 +70,16 @@ namespace Tower_Defence.Scripts.Towers
       {
          if (target.Equals(other.gameObject)) { target = null; }
          targetsInRange.Remove(other.gameObject);
+      }
+
+      //============================================================
+      // Private Methods:
+      //============================================================
+
+      private void SetTargetSelectionMode(TargetSelectionMode newTargetSelectionMode)
+      {
+         target = null;
+         targetSelectionMode = newTargetSelectionMode;
       }
    }
 }

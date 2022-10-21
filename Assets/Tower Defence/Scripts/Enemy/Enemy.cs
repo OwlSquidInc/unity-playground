@@ -4,12 +4,20 @@ namespace Tower_Defence.Scripts.Enemy
 {
     public class Enemy : MonoBehaviour
     {
+        //============================================================
+        // Inspector Variables:
+        //============================================================
+
         [SerializeField] private Transform targetPosition;
-        public float     DistanceUntilEnd { get; private set; }
+        [SerializeField] private float     distanceToEnd;
+
+        //============================================================
+        // Unity Lifecycle:
+        //============================================================
 
         protected void Update()
         {
-            DistanceUntilEnd = Vector3.Distance(transform.position, targetPosition.position);
+            distanceToEnd = Vector3.Distance(transform.position, targetPosition.position);
         }
     }
 }

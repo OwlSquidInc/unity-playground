@@ -128,8 +128,13 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 1486980954}
     m_Modifications:
+    - target: {fileID: 1423697904671696110, guid: 873bc7b7aeda9ba4598d5f543e84bf54, type: 3}
+      propertyPath: translateSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7520796927732210334, guid: 873bc7b7aeda9ba4598d5f543e84bf54, type: 3}
       propertyPath: targetPosition
       value: 
@@ -183,6 +188,7 @@ PrefabInstance:
       value: Generic Enemy (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 873bc7b7aeda9ba4598d5f543e84bf54, type: 3}
 --- !u!4 &2113010 stripped
 Transform:
@@ -226,8 +232,13 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 1486980954}
     m_Modifications:
+    - target: {fileID: 1423697904671696110, guid: 873bc7b7aeda9ba4598d5f543e84bf54, type: 3}
+      propertyPath: translateSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7520796927732210334, guid: 873bc7b7aeda9ba4598d5f543e84bf54, type: 3}
       propertyPath: targetPosition
       value: 
@@ -281,6 +292,7 @@ PrefabInstance:
       value: Generic Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 873bc7b7aeda9ba4598d5f543e84bf54, type: 3}
 --- !u!4 &521244949 stripped
 Transform:
@@ -292,8 +304,13 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 1486980954}
     m_Modifications:
+    - target: {fileID: 1423697904671696110, guid: 873bc7b7aeda9ba4598d5f543e84bf54, type: 3}
+      propertyPath: translateSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7520796927732210334, guid: 873bc7b7aeda9ba4598d5f543e84bf54, type: 3}
       propertyPath: targetPosition
       value: 
@@ -347,6 +364,7 @@ PrefabInstance:
       value: Generic Enemy (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 873bc7b7aeda9ba4598d5f543e84bf54, type: 3}
 --- !u!4 &573106907 stripped
 Transform:
@@ -493,7 +511,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786950122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.9630026, y: -11.643406, z: 17.740759}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -816,6 +834,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 245617226}
     m_Modifications:
     - target: {fileID: 7148793945617334167, guid: 9eac8e19db2576548910c980a791dea5, type: 3}
@@ -867,4 +886,5 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 9eac8e19db2576548910c980a791dea5, type: 3}
