@@ -76,6 +76,7 @@ namespace Tower_Defence.Scripts.Towers
       // Private Methods:
       //============================================================
 
+      // just a little debug method to test target selection
       private void SetTargetSelectionMode(TargetSelectionMode newTargetSelectionMode)
       {
          target = null;
