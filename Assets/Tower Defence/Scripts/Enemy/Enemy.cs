@@ -9,7 +9,12 @@ namespace Tower_Defence.Scripts.Enemy
         //============================================================
 
         [SerializeField] private Transform targetPosition;
-        [SerializeField] private float     distanceToEnd;
+
+        //============================================================
+        // Public Fields:
+        //============================================================
+
+        public float distanceToEnd = 0;
 
         //============================================================
         // Unity Lifecycle:

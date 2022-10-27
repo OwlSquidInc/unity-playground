@@ -6,7 +6,7 @@ namespace Tower_Defence.Scripts.Enums
 
    public enum TargetSelectionMode
    {
-      First = 1,
-      Last  = 2
+      ClosestToExit     = 1,
+      FurthestFromExit  = 2
    }
 }

@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7148793945617334171}
   - component: {fileID: 6021577052380101295}
-  - component: {fileID: 4850766105257960910}
+  - component: {fileID: 612680857}
   - component: {fileID: 3205600764859286696}
   m_Layer: 0
-  m_Name: Standard Tower
+  m_Name: Single Target Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,13 +48,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modelTransform: {fileID: 3318723493103620885}
-  rangeCollider: {fileID: 4850766105257960910}
-  towerRange: 8
+  rangeCollider: {fileID: 612680857}
+  towerRange: 4
   targetSelectionMode: 1
   target: {fileID: 0}
+  distanceToTarget: 0
   targetsInRange: []
---- !u!65 &4850766105257960910
-BoxCollider:
+--- !u!135 &612680857
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -64,7 +65,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 8, y: 0, z: 8}
+  m_Radius: 4
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &3205600764859286696
 Rigidbody:
